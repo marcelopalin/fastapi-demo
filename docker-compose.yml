@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  fastapi-demo:
+    container_name: "fastapi-demo"
+    image: "fastapi-demo:latest"
+    env_file:
+      - .env
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      labels:
+        - fastapi-demo
+    volumes:
+        - .:/api
+    ports:
+      - 5000:5000

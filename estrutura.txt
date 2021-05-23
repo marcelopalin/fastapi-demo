@@ -1,0 +1,37 @@
+.
+├── app
+│   ├── database.py
+│   ├── __init__.py
+│   ├── main.py
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── database.cpython-38.pyc
+│   │   ├── __init__.cpython-38.pyc
+│   │   ├── main.cpython-38.pyc
+│   │   ├── models.cpython-38.pyc
+│   │   └── utils.cpython-38.pyc
+│   ├── routers
+│   │   ├── analytics.py
+│   │   ├── articles.py
+│   │   ├── greetings.py
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       ├── analytics.cpython-38.pyc
+│   │       ├── articles.cpython-38.pyc
+│   │       ├── greetings.cpython-38.pyc
+│   │       └── __init__.cpython-38.pyc
+│   └── utils.py
+├── docker-compose.yml
+├── Dockerfile
+├── estrutura.txt
+├── generate_specification.py
+├── LICENSE
+├── Makefile
+├── Makefile_Openapi
+├── mypy.ini
+├── __pycache__
+│   └── gunicorn_conf.cpython-38.pyc
+├── README.md
+└── requirements.txt
+
+5 directories, 29 files
