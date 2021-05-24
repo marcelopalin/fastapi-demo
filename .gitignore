@@ -27,3 +27,4 @@ archive.zip
 # vim temporary files
 *~
 .*.sw?
+settings.toml

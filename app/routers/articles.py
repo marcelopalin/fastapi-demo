@@ -1,9 +1,11 @@
 from fastapi import APIRouter
+from fastapi import status
 from typing import List
 
 from ..database import articles
 from ..models import Article, ArticleServer
 from ..utils import validate_article_id
+from fastapi.responses import JSONResponse
 
 
 router = APIRouter(tags=["Articles"])
@@ -42,4 +44,4 @@ def delete_last_article():
 def update_article(article: Article, article_id: int):
     validate_article_id(article_id, articles)
     articles[article_id] = ArticleServer(id=article_id, **dict(article))
-    return articles[article_id]
+    return JSONResponse(status_code=status.HTTP_200_OK, content=articles[article_id].toJSON())
