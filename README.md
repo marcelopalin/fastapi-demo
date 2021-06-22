@@ -32,7 +32,7 @@ Execute:
 docker-compose up -d
 ```
 
-Acesse: http://localhost:5000/docs
+Acesse: http://localhost:8000/docs
 
 
 # Release 1.0.0
@@ -44,6 +44,9 @@ que farei estão a partir deste ponto.
 git tag -a 1.0.0 -m "FastAPI Coll Api Inicial finalizada"
 ```
 
+```
+git push --tags
+```
 
 ## Requisitos para Rodar o Projeto Manualmente
 
